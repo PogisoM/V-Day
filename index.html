@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valentine's Day Card</title>
+    <link rel="stylesheet" href="/V-Day/styles.css" />
+  </head>
+  <body>
+    <div class="card" id="valentineCard">
+      <h2>Happy Valentine's Day!</h2>
+      <p>Click the heart below for a surprise!</p>
+      <div class="heart" onclick="showMessage()">❤️</div>
+      <p class="hidden-message">You are loved! 💕</p>
+    </div>
+    <script>
+      function showMessage() {
+        document
+          .getElementById("valentineCard")
+          .classList.toggle("show-message");
+      }
+    </script>
+  </body>
+</html>
